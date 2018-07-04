@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife_HIt", "Assembly-CSharp.csproj", "{32F58C00-F764-1A27-9BCF-40B2E186E3A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife_Hit", "Assembly-CSharp.csproj", "{4FE9F91E-CCC7-D7AC-06C8-E919B0AC3B58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{32F58C00-F764-1A27-9BCF-40B2E186E3A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32F58C00-F764-1A27-9BCF-40B2E186E3A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32F58C00-F764-1A27-9BCF-40B2E186E3A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32F58C00-F764-1A27-9BCF-40B2E186E3A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE9F91E-CCC7-D7AC-06C8-E919B0AC3B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE9F91E-CCC7-D7AC-06C8-E919B0AC3B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE9F91E-CCC7-D7AC-06C8-E919B0AC3B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE9F91E-CCC7-D7AC-06C8-E919B0AC3B58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

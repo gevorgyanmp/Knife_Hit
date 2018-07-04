@@ -210,8 +210,8 @@ Camera:
   m_GameObject: {fileID: 282840810}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.81247777, g: 0.870728, b: 0.9622642, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -421,6 +421,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wood: {fileID: 1854684077}
   speed: 3
+  knife: {fileID: 168154, guid: c3f3125454df7064fb2a5b97efadbc6d, type: 2}
+  rb: {fileID: 54165326175982160, guid: c3f3125454df7064fb2a5b97efadbc6d, type: 2}
+  a: 0
+  b: 0
+  c: 0
+  y: 0
 --- !u!136 &1854684079
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -483,7 +489,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1854684077}
   m_LocalRotation: {x: 0.5309665, y: 0.46698454, z: 0.46698457, w: 0.53096646}
-  m_LocalPosition: {x: -0.01, y: 2.353, z: -8.06}
+  m_LocalPosition: {x: -0.01, y: 1.68, z: -8.06}
   m_LocalScale: {x: 0.76138014, y: 0.09923816, z: 0.76137996}
   m_Children: []
   m_Father: {fileID: 0}

@@ -6,19 +6,19 @@ public class Knife : MonoBehaviour {
 
     public float speed = 5f;
     public Rigidbody rb;
-    public bool tngvac;
+    public bool onBarrel;
     public Knife_Spawn spawn;
 	// Use this for initialization
 	void Start () {
        
-        tngvac = false;
+        onBarrel = false;
         
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKey(KeyCode.Space) && tngvac==false)
+        if (Input.GetKey(KeyCode.Space) && onBarrel==false)
         {
             rb.velocity = new Vector3(0, speed, 0);
                 } 
@@ -31,7 +31,7 @@ public class Knife : MonoBehaviour {
         {
             gameObject.transform.SetParent(other.transform);
             rb.velocity = Vector3.zero;
-            this.tngvac = true;
+            this.onBarrel = true;
             spawn.mustNew = true;
             rb.detectCollisions = false;            
         }

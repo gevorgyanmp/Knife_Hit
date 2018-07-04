@@ -26,7 +26,6 @@ public class Knife_Spawn : MonoBehaviour {
         {
             
             GameObject childObject = Instantiate(knife, transform.position, transform.rotation);
-            childObject.GetComponent<Knife>().spawn = this;
             childObject.transform.parent = parentObject.transform;
             childObject.transform.localScale = new Vector3(1, 1, 1);
             isKnife = true;
