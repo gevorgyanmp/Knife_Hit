@@ -333,5 +333,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 54165326175982160}
-  tngvac: 0
+  onBarrel: 0
   spawn: {fileID: 0}

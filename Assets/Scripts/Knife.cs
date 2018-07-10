@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Knife : MonoBehaviour {
 
+public class Knife : MonoBehaviour {
+   
     public float speed = 5f;
     public Rigidbody rb;
     public bool onBarrel;
     public Knife_Spawn spawn;
+   
 	// Use this for initialization
 	void Start () {
        
@@ -29,6 +31,7 @@ public class Knife : MonoBehaviour {
     {
         if (other.tag=="Barrel")
         {
+            spawn.currScore++;
             gameObject.transform.SetParent(other.transform);
             rb.velocity = Vector3.zero;
             this.onBarrel = true;
@@ -37,8 +40,9 @@ public class Knife : MonoBehaviour {
         }
         if(other.tag=="Knife")
         {
-            Debug.Log("You Lose");
+            spawn.YouLoose();
         }
     }
+
 
 }

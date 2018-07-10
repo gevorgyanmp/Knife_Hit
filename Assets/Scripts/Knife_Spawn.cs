@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Knife_Spawn : MonoBehaviour {
 
@@ -8,10 +10,12 @@ public class Knife_Spawn : MonoBehaviour {
     public bool isKnife;
     public bool mustNew;
     public GameObject parentObject;
-    
+    public Text CScore;
+    public int currScore;
+
     // Use this for initialization
     void Start () {
-       
+        currScore = 0;
         isKnife = true;
         mustNew = false;
     }
@@ -31,6 +35,16 @@ public class Knife_Spawn : MonoBehaviour {
             isKnife = true;
             mustNew = false;
         }
-
+        CScore.text = currScore.ToString();
 	}
+    public void YouLoose()
+    {
+        Debug.Log("You Lose");
+        if(currScore>= PlayerPrefs.GetInt("Hscore"))
+        {
+            PlayerPrefs.SetInt("Hscore", currScore);
+            Debug.Log("New: " + PlayerPrefs.GetInt("Hscore").ToString());
+            SceneManager.LoadScene("Menu");
+        }
+    }
 }
