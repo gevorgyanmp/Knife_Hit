@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+
 
 public class Button : MonoBehaviour {
+    public GameObject menucont;
+    public MenuController mc;
 
-    public Text highScore;
+    // Use this for initialization
+    void Start () {
+        menucont = GameObject.Find("MenuController");
+        mc = menucont.GetComponent<MenuController>();
 
-	// Use this for initialization
-	void Start () {
-        highScore.text = PlayerPrefs.GetInt("Hscore").ToString();
-        Debug.Log("Current: " + PlayerPrefs.GetInt("Hscore").ToString());
     }
 	
 	// Update is called once per frame
@@ -25,6 +26,10 @@ public class Button : MonoBehaviour {
         if (gameObject.name == "Play")
         {
             SceneManager.LoadScene("Game");
+        }
+        if (gameObject.name == "Restart")
+        {
+            mc.isLose = false;
         }
     }
 }

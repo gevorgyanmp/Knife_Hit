@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Barrel
   - Knife
+  - Mcont
   layers:
   - Default
   - TransparentFX

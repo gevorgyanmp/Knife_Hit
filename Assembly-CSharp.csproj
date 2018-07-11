@@ -62,6 +62,8 @@
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\Knife.cs" />
     <Compile Include="Assets\Scripts\Knife_Spawn.cs" />
+    <Compile Include="Assets\Scripts\MenuController.cs" />
+    <Compile Include="Assets\Scripts\Swicher.cs" />
     <Compile Include="Assets\Scripts\Wood_Rotate.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Martin/Documents/Unity Projects/Knife_Hit/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

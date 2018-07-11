@@ -12,12 +12,16 @@ public class Knife_Spawn : MonoBehaviour {
     public GameObject parentObject;
     public Text CScore;
     public int currScore;
+    public MenuController mc;
+    public GameObject menucont;
 
     // Use this for initialization
     void Start () {
         currScore = 0;
         isKnife = true;
         mustNew = false;
+        menucont = GameObject.Find("MenuController");
+        mc = menucont.GetComponent<MenuController>();
     }
 	
 	// Update is called once per frame
@@ -44,7 +48,8 @@ public class Knife_Spawn : MonoBehaviour {
         {
             PlayerPrefs.SetInt("Hscore", currScore);
             Debug.Log("New: " + PlayerPrefs.GetInt("Hscore").ToString());
-            SceneManager.LoadScene("Menu");
-        }
+         }
+        mc.isLose = true;
+        SceneManager.LoadScene("Menu");
     }
 }

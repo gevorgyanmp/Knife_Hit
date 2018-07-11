@@ -33,20 +33,15 @@ public class Wood_Rotate : MonoBehaviour {
 
     private void Start()
     {
-      for (int i=0; i<3; i++)
+    /*  for (int i=0; i<3; i++)
         {
             CreateKinfe();
-        }
-            
-
-        
-            
-        
-        
+        }*/
+          
     }
 
     // Update is called once per frame
     void Update () {
         wood.transform.Rotate(0, speed, 0);
-	}
+       	}
 }
